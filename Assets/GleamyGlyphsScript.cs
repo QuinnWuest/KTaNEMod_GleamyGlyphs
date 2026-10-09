@@ -99,7 +99,7 @@ public class GleamyGlyphsScript : MonoBehaviour
                     distinct = false;
                     break;
                 }
-                arr.OrderBy(x => x);
+                arr.Sort();
                 if (tempHexes.Any(x => arr.SequenceEqual(x)))
                     distinct = false;
                 if (!distinct)
